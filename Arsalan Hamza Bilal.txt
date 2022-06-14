@@ -1,0 +1,194 @@
+•	Students (add/edit/delete)
+a.1	 name
+b.2	fatherName
+c.3	cnic
+d.4	contact
+e.5	age
+f.6	dateOfBirth
+g.7	class
+h.8	section
+i.	id
+j.9	email
+k.10	password
+
+
+  <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+        <DrawerHeader />
+        <Grid>
+          <Paper elevation={10} style={paperStyling}>
+            <Grid align="center">
+              <Avatar sx={{ backgroundColor: "rgb(25, 118, 210) !important" }}>
+                <LockOpenTwoToneIcon sx={{ color: "#000000" }} />
+              </Avatar>
+              <Typography className="typoStyling" variant="h5">
+                Sign Up
+              </Typography>
+            </Grid>
+            <TextField
+              style={tfcbbmargin}
+              label="User Name"
+              placeholder="Enter Your User Name"
+              type="text"
+              variant="standard"
+              fullWidth
+              required
+            />
+            <TextField
+              style={tfcbbmargin}
+              label="Father Name"
+              placeholder="Enter Your User Name"
+              type="text"
+              variant="standard"
+              fullWidth
+              required
+            />
+            <TextField
+              style={tfcbbmargin}
+              label="CNIC"
+              placeholder="Enter Your CNIC Number"
+              type="number"
+              variant="standard"
+              fullWidth
+              required
+            />
+            <TextField
+              style={tfcbbmargin}
+              label="Number"
+              placeholder="Enter Your Contact Number"
+              type="number"
+              variant="standard"
+              fullWidth
+              required
+            />
+            <TextField
+              style={tfcbbmargin}
+              placeholder="Enter Your Class"
+              type="date"
+              variant="standard"
+              fullWidth
+              required
+            />
+            <TextField
+              style={tfcbbmargin}
+              label="Age"
+              placeholder="Enter Your Age"
+              type="number"
+              variant="standard"
+              fullWidth
+              required
+            />
+            <TextField
+              style={tfcbbmargin}
+              label="Class"
+              placeholder="Enter Your Class"
+              type="text"
+              variant="standard"
+              fullWidth
+              required
+            />
+            <TextField
+              style={tfcbbmargin}
+              label="Section"
+              placeholder="Enter Your Section"
+              type="text"
+              variant="standard"
+              fullWidth
+              required
+            />
+            <TextField
+              style={tfcbbmargin}
+              label="Email"
+              placeholder="Enter Your Email Address"
+              type="text"
+              variant="standard"
+              fullWidth
+              required
+            />
+            <TextField
+              style={tfcbbmargin}
+              label="Password"
+              placeholder="Enter Your Password"
+              type="password"
+              variant="standard"
+              fullWidth
+              required
+            />
+            <TextField
+              style={tfcbbmargin}
+              label="Confirm Password"
+              placeholder="Enter Your Password Again"
+              type="password"
+              variant="standard"
+              fullWidth
+              required
+            />
+            <FormGroup>
+              <FormControlLabel
+                style={tfcbbmargin}
+                control={<Checkbox />}
+                label="Remember My Identity"
+              />
+            </FormGroup>
+            <Link to={""}>
+              <Button
+                variant="contained"
+                style={tfcbbmargin}
+                className="btn"
+                fullWidth
+              >
+                Create My Account
+              </Button>
+            </Link>
+            <Link to={""}>
+              <Button
+                variant="contained"
+                style={tfcbbmargin}
+                className="btn"
+                fullWidth
+              >
+                Show List
+              </Button>
+            </Link>
+          </Paper>
+        </Grid>
+        <Routes>
+          <Route path="headlines" element={<Headlines />} />
+          <Route path="onenews" element={<OneNews />} />
+          <Route path="news" element={<NEWS />} />
+        </Routes>
+      </Box>
+
+
+
+
+
+
+import React from "react";
+import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import Paper from "@mui/material/Paper";
+import Avatar from "@mui/material/Avatar";
+import LockOpenTwoToneIcon from "@mui/icons-material/LockOpenTwoTone";
+import TextField from "@mui/material/TextField";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
+import FormGroup from "@mui/material/FormGroup";
+import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
+
+
+•	Teachers (add/edit/delete)
+a.	name
+b.	cnic
+c.	contact
+d.	class
+e.	section
+•	Course (add/edit/delete)
+a.	name
+b.	duration
+c.	dateOfAdmissionStart
+d.	dateOfAdmissionEnd
+•	Quiz (add/edit/delete)
+•	Admin (add/edit/delete)
+•	Result (add/edit/delete)
